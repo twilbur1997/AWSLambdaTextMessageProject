@@ -1,4 +1,5 @@
-# Nightly Marvel Movie Message Using AWS Lambda and Amazon Pinpoint
+# Nightly Marvel Movie Message
+## Using AWS Lambda and Amazon Pinpoint
 <br />
 
 This tutorial will step you through how to set up a service that sends a text
@@ -6,9 +7,7 @@ message on a schedule using AWS.
 
 <br />
 
-
 ## The Plot
-
 
 You were asked by a friend to watch a different Marvel movie every night this
 week. You aren't sure which order to watch them in, and don't really want to
@@ -114,8 +113,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-gr
 https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 
 
-Selecting a Region
-------------------
+## Selecting a Region
 
 The next thing we need to do after creating our AWS Account, is select the
 region in which our services will live. This isn't a permanent change!  It's
@@ -140,8 +138,8 @@ Then, we'll make a quick modification to the Lambda's IAM Role and set up
 CloudWatch. It's as simple as that!
 
 
-Setting up a Pinpoint Long Code
--------------------------------
+## Setting up a Pinpoint Long Code
+
 
 First, we are going to set up a long code in Amazon Pinpoint to eventually be
 able to text from with our Lambda function.
@@ -232,9 +230,7 @@ function later.
 <br />
 
 
-Creating the Lambda Function
-----------------------------
-
+## Creating the Lambda Function
 <br />
 
 Click on the "Services" tab in the upper left and type in "Lambda" to get to
@@ -293,8 +289,8 @@ Lambda editor is available. Here is what you should see.
 <img src="/Screenshots/LambdaEmptyEditor.png" alt="Empty Lambda Editor" width="900"/>
 <br />
 
-Adding Code and Testing the Lambda Function
--------------------------------------------
+## Adding Code and Testing the Lambda Function
+
 
 
 When it is available, scroll down to the Function
@@ -350,7 +346,6 @@ The code for this function is included here as well as in "TextCode.py"
   </p>
 </details>
 
-
 <br />
 
 Copy and paste this code into the Lambda function Editor. The code provided has
@@ -366,21 +361,19 @@ upper right corner.
 <img src="/Screenshots/LambdaEditorWithCode.png" alt="Lambda Editor With Code" width="900"/>
 <br />
 
-Next, we are going to test the Lambda function.
+Next, we are going to test the Lambda function to see if we can send a text!
 
 
 <br /><br />
 
 
-Modifying the Lambda IAM Role
------------------------------
+## Modifying the Lambda IAM Role
 
 What caused this error?....
 
 
 <br /><br /><br /><br />
 
-**TODO**: replace Pinpoint application number, replace phone number, test Lambda
 
 **TODO**: After testing Lambda, add Pinpoint permissions to Lambda IAM Role
 
