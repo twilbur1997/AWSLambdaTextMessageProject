@@ -17,11 +17,11 @@ message on a schedule using AWS.
 4. [Setup](#setup)
 * [Selecting a Region](#selecting-a-region)
 5. [The Tutorial](#the-tutorial)
-* [Setting up a Pinpoint Long Code](setting-up-a-pinpoint-long-code)
-* [Creating the Lambda Function](creating-the-lambda-function)
-* [Adding Code and Testing the Lambda Function](adding-code-and-testing-the-lambda-function)
-* [Modifying the Lambda IAM Role](modifying-the-lambda-iam-role)
-* [Modifying the Lambda IAM TYPO](modifying-the-lambda-iam-roe)
+* [Setting up a Pinpoint Long Code](#setting-up-a-pinpoint-long-code)
+* [Creating the Lambda Function](#creating-the-lambda-function)
+* [Adding Code and Testing the Lambda Function](#adding-code-and-testing-the-lambda-function)
+* [Modifying the Lambda IAM Role](#modifying-the-lambda-iam-role)
+* [Modifying the Lambda IAM TYPO](#modifying-the-lambda-iam-roe)
 
 **TODO**:
 CloudWatch Event Rule
