@@ -1,5 +1,4 @@
-Nightly Marvel Movie Message Using AWS Lambda and Amazon Pinpoint
-=================================================================
+# Nightly Marvel Movie Message Using AWS Lambda and Amazon Pinpoint
 <br />
 
 This tutorial will step you through how to set up a service that sends a text
@@ -8,14 +7,14 @@ message on a schedule using AWS.
 <br />
 
 
-The Plot
---------
+## The Plot
+
 
 You were asked by a friend to watch a different Marvel movie every night this
-week. You aren't sure which order to watch them in, and you're sure it's not
-a big deal.
+week. You aren't sure which order to watch them in, and don't really want to
+ask.
 
-So, you decide to try and set up a text message service to text you the name of
+So, you decide to set up a text message service to text you the name of
 a random Marvel movie to watch each night at 7pm.
 
 <br /><br />
@@ -30,10 +29,9 @@ The services we will use are as follows:
 
 <br /><br />
 
-Disclaimers
-===========
+# Disclaimers
 
-This tutorial is NOT free!! It is very inexpensive (~$1)
+This tutorial is NOT free!! It is **very inexpensive** (~$1).
 
 An Amazon Pinpoint long code costs $1 a month for
 a dedicated long code, and SMS messages sent in the USA are $0.00645 each as of
@@ -42,19 +40,15 @@ this writing.
 These costs are relatively low, but I want to make it clear that this tutorial
 is not completely free.
 
-Note that there are opportunities for students to get AWS credits through AWS Educate.
-https://aws.amazon.com/blogs/aws/aws-educate-credits-training-content-and-collaboration-for-students-educators/
-https://aws.amazon.com/education/awseducate/
+Note that there are opportunities for students to get [AWS credits](https://aws.amazon.com/blogs/aws/aws-educate-credits-training-content-and-collaboration-for-students-educators/)
+through [AWS Educate](https://aws.amazon.com/education/awseducate/).
 
 There are compute charges for AWS Lambda, but this tutorial uses very little, so
-it is all within the free tier.
+it is all within the [free tier](https://aws.amazon.com/free/).
 
-AWS IAM is a service that is provided at no cost.
-https://aws.amazon.com/iam/faqs/#Pricing
+AWS IAM is a service that is provided at [no cost](https://aws.amazon.com/iam/faqs/#Pricing).
 
-AWS CloudWatch Event Rules are also free.
-https://forums.aws.amazon.com/message.jspa?messageID=699878
-
+AWS CloudWatch Event Rules are also [free](https://forums.aws.amazon.com/message.jspa?messageID=699878).
 
 I will describe how to turn off resources at the end of this lab. Note that
 Pinpoint is the only service that will incur recurring costs, as IAM and
@@ -62,14 +56,14 @@ CloudWatch Event Rules are free and with Lambda, you only pay when you execute
 code. You never have to pay for IAM users, roles, CloudWatch Rules, or Lambda
 functions that are sitting around doing nothing.
 
-
+If you are interested in a free tutorial, I may build out a similar tutorial
+using [AWS SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-lambda-as-subscriber.html)
+in the future, which has a more inclusive free tier than Pinpoint
 
 
 <br /><br />
 
-AWS Lambda
-==========
-
+# AWS Lambda
 AWS Lambda is a serverless compute service offered by AWS. By serverless, it
 doesn't mean the code is executed on elephants, but rather that you don't have
 to worry about spinning up a whole computer, installing the operating system,
@@ -82,17 +76,13 @@ cost!
 
 See more information [here](https://aws.amazon.com/lambda/faqs/).
 
-
 <br /><br />
 
 
-
 # Amazon Pinpoint
-
-
 Amazon Pinpoint is a service that is aimed primarily at marketing, and allows
 users to use AWS to send out text messages, emails, or push notifications to
-their customers to communicate with their end users and measure user engagement
+their customers to communicate with their end users and measure user engagement.
 
 We'll be using it to configure a long code, which is just a dedicated phone
 number that we can text people from using AWS Lambda.
@@ -102,13 +92,15 @@ See more information [here](https://aws.amazon.com/pinpoint/faqs/).
 
 <br /><br />
 
-Amazon CloudWatch
-============
+# Amazon CloudWatch
+
+# Amazon IAM
 
 
 
-Setup
-=====
+
+# Setup
+
 
 The first thing you'll need to do is create an AWS account
 https://portal.aws.amazon.com/billing/signup#/
@@ -141,13 +133,11 @@ of those two regions.
 <br /><br />
 
 
-The Tutorial
-============
+# The Tutorial
 
 We'll start by creating an Amazon Pinpoint project and making a Lambda function.
 Then, we'll make a quick modification to the Lambda's IAM Role and set up
 CloudWatch. It's as simple as that!
-
 
 
 Setting up a Pinpoint Long Code
