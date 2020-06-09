@@ -87,7 +87,7 @@ See more information [here](https://aws.amazon.com/lambda/faqs/).
 
 
 
-#Amazon Pinpoint
+# Amazon Pinpoint
 
 
 Amazon Pinpoint is a service that is aimed primarily at marketing, and allows
