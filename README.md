@@ -80,13 +80,15 @@ AWS lets you use Lambda for free for 400,000 GB-seconds and 1,000,000 invokes.
 This means that it is incredibly easy to experiment with it for absolutely no
 cost!
 
+See more information [here](https://aws.amazon.com/lambda/faqs/).
+
 
 <br /><br />
 
 
 
-Amazon Pinpoint
-============
+#Amazon Pinpoint
+
 
 Amazon Pinpoint is a service that is aimed primarily at marketing, and allows
 users to use AWS to send out text messages, emails, or push notifications to
@@ -95,7 +97,13 @@ their customers to communicate with their end users and measure user engagement
 We'll be using it to configure a long code, which is just a dedicated phone
 number that we can text people from using AWS Lambda.
 
+See more information [here](https://aws.amazon.com/pinpoint/faqs/).
+
+
 <br /><br />
+
+Amazon CloudWatch
+============
 
 
 
@@ -136,8 +144,9 @@ of those two regions.
 The Tutorial
 ============
 
-We'll start by creating an Amazon Pinpoint project, creating a Lambda function,
-and modifying its IAM Role.
+We'll start by creating an Amazon Pinpoint project and making a Lambda function.
+Then, we'll make a quick modification to the Lambda's IAM Role and set up
+CloudWatch. It's as simple as that!
 
 
 
