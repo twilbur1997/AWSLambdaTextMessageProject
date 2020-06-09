@@ -9,10 +9,35 @@ message on a schedule using AWS.
 
 1. [The Plot](#the-plot)
 2. [Disclaimers](#disclaimers)
+3. [Service Overview](#service-overview)
+* [AWS Lambda](##aws-lambda)
+* [AWS Pinpoint](##aws-pinpoint)
+* [AWS CloudWatch](##aws-cloudwatch)
+* [AWS IAM](##aws-iam)
+4. [Setup](#setup)
+* [Selecting a Region](#selecting-a-region)
+5. [The Tutorial](#the-tutorial)
+* [Setting up a Pinpoint Long Code](setting-up-a-pinpoint-long-code)
+* [Creating the Lambda Function](creating-the-lambda-function)
+* [Adding Code and Testing the Lambda Function](adding-code-and-testing-the-lambda-function)
+* [Modifying the Lambda IAM Role](modifying-the-lambda-iam-role)
+* [Modifying the Lambda IAM TYPO](modifying-the-lambda-iam-roe)
+
+**TODO**:
+CloudWatch Event Rule
+Cleanup
+
+
+## Creating the Lambda Function
+
+## Adding Code and Testing the Lambda Function
+
+## Modifying the Lambda IAM Role
+
 
 <br />
 
-## The Plot
+# The Plot
 
 You were asked by a friend to watch a different Marvel movie every night this
 week. You aren't sure which order to watch them in, and don't really want to
@@ -66,8 +91,8 @@ in the future, which has a more inclusive free tier than Pinpoint
 
 
 <br /><br />
-
-# AWS Lambda
+# Service Overview
+## AWS Lambda
 AWS Lambda is a serverless compute service offered by AWS. By serverless, it
 doesn't mean the code is executed on elephants, but rather that you don't have
 to worry about spinning up a whole computer, installing the operating system,
@@ -83,7 +108,7 @@ See more information [here](https://aws.amazon.com/lambda/faqs/).
 <br /><br />
 
 
-# Amazon Pinpoint
+## Amazon Pinpoint
 Amazon Pinpoint is a service that is aimed primarily at marketing, and allows
 users to use AWS to send out text messages, emails, or push notifications to
 their customers to communicate with their end users and measure user engagement.
@@ -96,9 +121,9 @@ See more information [here](https://aws.amazon.com/pinpoint/faqs/).
 
 <br /><br />
 
-# Amazon CloudWatch
+## Amazon CloudWatch
 
-# Amazon IAM
+## Amazon IAM
 
 
 
@@ -297,7 +322,6 @@ Lambda editor is available. Here is what you should see.
 ## Adding Code and Testing the Lambda Function
 
 
-
 When it is available, scroll down to the Function
 Code section. This is where you can insert the Python code that will make this
 function work.
@@ -308,7 +332,7 @@ function work.
 
 The code for this function is included here as well as in "TextCode.py"
 
-## See Code Below!
+### See Code Below!
 <details>
   <summary>Click to see/hide code!</summary>
   <p>
