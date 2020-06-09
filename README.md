@@ -5,6 +5,11 @@
 This tutorial will step you through how to set up a service that sends a text
 message on a schedule using AWS.
 
+# Table of Contents
+
+1. [The Plot](#the-plot)
+2. [Disclaimers](#disclaimers)
+
 <br />
 
 ## The Plot
