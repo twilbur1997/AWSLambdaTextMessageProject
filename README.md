@@ -28,11 +28,6 @@ CloudWatch Event Rule
 Cleanup
 
 
-## Creating the Lambda Function
-
-## Adding Code and Testing the Lambda Function
-
-## Modifying the Lambda IAM Role
 
 
 <br />
