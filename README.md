@@ -54,7 +54,6 @@ The services we will use are as follows:
 <br /><br />
 
 # Disclaimers
-
 This tutorial is NOT free!! It is **very inexpensive** (~$1).
 
 An Amazon Pinpoint long code costs $1 a month for
@@ -84,7 +83,6 @@ If you are interested in a free tutorial, I may build out a similar tutorial
 using [AWS SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-lambda-as-subscriber.html)
 in the future, which has a more inclusive free tier than Pinpoint
 
-
 <br /><br />
 # Service Overview
 ## AWS Lambda
@@ -99,9 +97,7 @@ This means that it is incredibly easy to experiment with it for absolutely no
 cost!
 
 See more information [here](https://aws.amazon.com/lambda/faqs/).
-
 <br /><br />
-
 
 ## Amazon Pinpoint
 Amazon Pinpoint is a service that is aimed primarily at marketing, and allows
@@ -112,16 +108,21 @@ We'll be using it to configure a long code, which is just a dedicated phone
 number that we can text people from using AWS Lambda.
 
 See more information [here](https://aws.amazon.com/pinpoint/faqs/).
-
-
 <br /><br />
 
 ## Amazon CloudWatch
+Amazon CloudWatch Events is able to generate events on a schedule you set by
+using the popular Unix cron syntax. By monitoring for these events, you can
+implement a scheduled application.
+
+See more information [here](https://aws.amazon.com/cloudwatch/faqs/).
 
 ## Amazon IAM
+You can use AWS IAM to securely control individual and group access to your AWS
+resources. You can create and manage user identities ("IAM users") and grant
+permissions for those IAM users to access your resources.
 
-
-
+See more information [here](https://aws.amazon.com/iam/faqs/).
 
 # Setup
 
