@@ -15,7 +15,6 @@ message on a schedule using AWS.
 * [Amazon CloudWatch](#amazon-cloudwatch)
 * [Amazon IAM](#amazon-iam)
 4. [Setup](#setup)
-* [Selecting a Region](#selecting-a-region)
 5. [The Tutorial](#the-tutorial)
 * [Setting up a Pinpoint Long Code](#setting-up-a-pinpoint-long-code)
 * [Creating the Lambda Function](#creating-the-lambda-function)
@@ -26,8 +25,6 @@ message on a schedule using AWS.
 **TODO**:
 CloudWatch Event Rule
 Cleanup
-
-
 
 
 <br />
