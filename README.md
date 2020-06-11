@@ -267,9 +267,11 @@ function later.
 <br />
 
 Click on the "Services" tab in the upper left and type in "Lambda" to get to
-AWS Lambda
+AWS Lambda.
 
-**TODO**: Add Screenshot of the above again with red rectangle around "Services"
+<br />
+<img src="/Screenshots/PinpointAllProjectIDsCroppedServices.png" alt="Service Button in upper left" width="900"/>
+<br />
 
 
 <br />
