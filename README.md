@@ -414,6 +414,23 @@ It should bring you back to this screen - hit Save in the upper right again.
 <img src="/Screenshots/LambdaTestCreated.png" alt="Lambda Test Created" width="900"/>
 <br />
 
+Now, we are ready to test our Lambda function and send our first text message!
+Hit the "Test" button that's right next to "Save".
+
+<br />
+<img src="/Screenshots/TestPermissionsError.png" alt="Test Permissions Error" width="900"/>
+<br />
+
+Oh no! You hit the test button too hard! Just kidding, this was supposed to happen.
+Let's take a closer look at why our test failed. I hope it wasn't my code...
+
+<br />
+<img src="/Screenshots/TestPermissionsErrorExplained.png" alt="Test Permissions Error Explained" width="900"/>
+<br />
+
+Alright, I highlighted the most important information in red boxes. Specifically,
+it looks like there was an AccessDeniedException. That means that a user or role
+was denied permissions to do something by IAM.
 
 <br /><br />
 
