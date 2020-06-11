@@ -397,6 +397,23 @@ upper right corner.
 
 Next, we are going to test the Lambda function to see if we can send a text!
 
+<br />
+<img src="/Screenshots/LambdaConfigureTestEvent.png" alt="Lambda Configure Test" width="900"/>
+<br />
+
+No need to change anything about the test, just name it something - I chose
+"MarvelTest". Then, hit "Create"!
+
+<br />
+<img src="/Screenshots/LambdaConfigureTestEventNamed.png" alt="Lambda Configure Test Named" width="900"/>
+<br />
+
+It should bring you back to this screen - hit Save in the upper right again.
+
+<br />
+<img src="/Screenshots/LambdaTestCreated.png" alt="Lambda Test Created" width="900"/>
+<br />
+
 
 <br /><br />
 
