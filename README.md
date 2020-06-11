@@ -60,7 +60,7 @@ this writing.
 These costs are relatively low, but I want to make it clear that this tutorial
 is not completely free.
 
-Note that there are opportunities for students to get [AWS credits](https://aws.amazon.com/blogs/aws/aws-educate-credits-training-content-and-collaboration-for-students-educators/)
+There are opportunities for students to get [AWS credits](https://aws.amazon.com/blogs/aws/aws-educate-credits-training-content-and-collaboration-for-students-educators/)
 through [AWS Educate](https://aws.amazon.com/education/awseducate/).
 
 There are compute charges for AWS Lambda, but this tutorial uses very little, so
@@ -123,10 +123,8 @@ See more information [here](https://aws.amazon.com/iam/faqs/).
 
 # Setup
 
-
 The first thing you'll need to do is create an AWS account
 https://portal.aws.amazon.com/billing/signup#/
-
 
 Once you have that set up, you can optionally create an admin user for best
 practice in IAM. This isn't a necessary step, but it is considered bad practice
@@ -162,7 +160,6 @@ CloudWatch. It's as simple as that!
 
 
 ## Setting up a Pinpoint Long Code
-
 
 First, we are going to set up a long code in Amazon Pinpoint to eventually be
 able to text from with our Lambda function.
@@ -202,9 +199,11 @@ Next, click on the button to configure SMS and Voice for your project.
 <img src="/Screenshots/PinpointConfigureSMS.png" alt="Pinpoint SMS No Long Code" width="900"/>
 <br />
 
-
 Check the box next to "Enable the SMS channel for this project" and click "Save changes"
-**TODO** Add screenshot of enabling the SMS channel for this project.
+
+<br />
+<img src="/Screenshots/PinpointEnableSMS.png" alt="Pinpoint Enable SMS" width="900"/>
+<br />
 
 Then click settings, and then SMS and Voice to manage your long codes.
 
