@@ -175,14 +175,15 @@ Console. If you don't see this page, click on the AWS logo in the upper left cor
 <img src="/Screenshots/AWSManagementConsoleHome.png" alt="AWS Management Console" width="900"/>
 <br /><br />
 
-Type in "Pinpoint" in the search bar to get to Amazon Pinpoint.
+Type in "Pinpoint" in the search bar and click on the first result to navigate
+to Amazon Pinpoint.
 
 <br />
 <img src="/Screenshots/PinpointSearchManagementConsole.png" alt="Pinpoint Search" width="900"/>
 <br /><br />
 
-Now, let's provision a long code in Amazon Pinpoint. When you first open the
-Pinpoint dashboard, it may look like the following.
+Now, we're going to create a project in Amazon Pinpoint and provision a long
+code. When you first open the Pinpoint dashboard, it will look like the following.
 
 <br />
 <img src="/Screenshots/EmptyPinpointProjects.png" alt="Pinpoint Empty Dashboard" width="900"/>
