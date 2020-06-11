@@ -270,7 +270,7 @@ Click on the "Services" tab in the upper left and type in "Lambda" to get to
 AWS Lambda.
 
 <br />
-<img src="/Screenshots/PinpointAllProjectIDsCroppedServices.png" alt="Service Button in upper left" width="900"/>
+<img src="/Screenshots/PinpointAllProjectIDsCroppedServices.png" alt="Service Button in upper left" width="600"/>
 <br />
 
 
