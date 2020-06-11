@@ -227,9 +227,8 @@ Click the radio button that says "Promotional". This tells our Pinpoint project
 that our messages are non-critical to our business function.
 
 <br />
-<img src="/Screenshots/PromotionalLongCodesPromotional.png" alt="Pinpoint Long Code Promotional" width="900"/>
+<img src="/Screenshots/RequestLongCodesWithButton.png" alt="Request Long Codes Button" width="900"/>
 <br />
-**TODO**: New screenshot above slightly scrolled down to show request button
 
 Then, hit "Request long codes", and it should take you back to the SMS and Voice page.
 
