@@ -151,6 +151,15 @@ of those two regions.
 <img src="/Screenshots/PinpointSupportedRegion.png" alt="Pinpoint Supported Regions" width="400"/>
 <br /><br />
 
+**TODO:** Which one is better?
+<br />
+<img src="/Screenshots/AWSRegionSelectRedBox.png" alt="Region Select Red Box" width="400"/>
+<br /><br />
+
+<br />
+<img src="/Screenshots/AWSRegionSelectRedBox.png" alt="Region Select Red Box Plus Arrow" width="400"/>
+<br /><br />
+
 
 # The Tutorial
 
