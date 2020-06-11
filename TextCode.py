@@ -18,7 +18,7 @@ def lambda_handler(event, context):
     Message = random.choice(messages) # Pick a random movie to watch
 
     pinpoint.send_messages(
-        ApplicationId='<COPY_APPLICATION_ID_FROM_AWS_PINPOINT>',
+        ApplicationId='COPY_APPLICATION_ID_FROM_AWS_PINPOINT',
         MessageRequest={
             'Addresses': {
                 '+1XXXXXXXXXX': {'ChannelType': 'SMS'}
