@@ -20,7 +20,6 @@ message on a schedule using AWS.
 * [Creating the Lambda Function](#creating-the-lambda-function)
 * [Adding Code and Testing the Lambda Function](#adding-code-and-testing-the-lambda-function)
 * [Modifying the Lambda IAM Role](#modifying-the-lambda-iam-role)
-* [Modifying the Lambda IAM TYPO](#modifying-the-lambda-iam-roe)
 
 **TODO**:
 CloudWatch Event Rule
