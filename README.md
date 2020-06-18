@@ -21,9 +21,9 @@ message on a schedule using AWS.
 * [Adding Code and Testing the Lambda Function](#adding-code-and-testing-the-lambda-function)
 * [Modifying the Lambda IAM Role](#modifying-the-lambda-iam-role)
 
-**TODO**:
-CloudWatch Event Rule
-Cleanup
+6. [Adding a CloudWatch Event](adding-a-cloudwatch-event-to-automatically-trigger-the-lambda-function)
+7. [Cleaning Up](cleaning-up)
+8. [The End](#the-end)
 
 
 <br />
@@ -474,19 +474,34 @@ Type "Marvel" into the search bar to find the role that your Lambda function cre
 <img src="/Screenshots/IAMRoleSearch.png" alt="IAM Role Search" width="900"/>
 <br />
 
+
+
+
+
+
+
+
+
 <br /><br /><br /><br />
 
 
 **TODO**: After testing Lambda, add Pinpoint permissions to Lambda IAM Role
 
+
+## Adding a CloudWatch Event to automatically trigger the Lambda function
 **TODO**: Add CloudWatch Event Rule to schedule text every day.
 http://www.cronmaker.com/
 
-
+## Cleaning Up
 **TODO**: Add cleanup instructions for Pinpoint, Lambda, CloudWatch, and IAM
 
 <br /><br />
 
+
+## The End
+
+Thanks for reading through this tutorial! Feel free to give feedback about any issues
+or via a pull request. I hope your AWS journey goes well!
 
 
 <br /><br /><br /><br />
