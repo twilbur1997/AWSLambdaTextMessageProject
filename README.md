@@ -79,6 +79,9 @@ If you are interested in a free tutorial, I may build out a similar tutorial
 using [AWS SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-lambda-as-subscriber.html)
 in the future, which has a more inclusive free tier than Pinpoint
 
+There are also some free services which can do similar things to this, like IFTTT
+https://ifttt.com/
+
 <br /><br />
 # Service Overview
 ## AWS Lambda
