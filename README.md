@@ -427,9 +427,15 @@ Let's take a closer look at why our test failed. I hope it wasn't my code...
 <img src="/Screenshots/TestPermissionsErrorExplained.png" alt="Test Permissions Error Explained" width="900"/>
 <br />
 
-Alright, I highlighted the most important information in red boxes. Specifically,
-it looks like there was an AccessDeniedException. That means that a user or role
-was denied permissions to do something by IAM.
+I highlighted the most important information in some boxes. Specifically,
+it looks like there was an AccessDeniedException. That means that an IAM user or
+role was denied permissions to do something by IAM.
+
+The IAM role in question is the default one that was created when we first
+created our Lambda function. It is being denied the action mobiletargeting:SendMessages
+on a specific resource, which is our Pinpoint Project.
+
+Let's fix that now.
 
 <br /><br />
 
