@@ -485,6 +485,13 @@ we need to add another policy. Click on "Add Inline Policy"
 <br />
 
 
+Here is the screen you will see to create a new policy and attach it to this role.
+
+<br />
+<img src="/Screenshots/IAMCreatePolicy.png" alt="IAM Create Role" width="900"/>
+<br />
+
+
 Now, AWS Pinpoint is the service which we need permissions for. Search for that
 in the "Service" area and select Pinpoint.
 <br />
@@ -495,12 +502,26 @@ and is a good way to keep your users and applications from doing things they
 aren't supposed to. To demonstrate this, I will only allow the function the
 permissions that it needs, namely, the mobiletargeting:SendMessages command.
 <br />
-Next, for "Resources" again it's okay to select "All Resources" for this tutorial
+Next, for "Resources" again it's okay to select "All Resources" for this tutorial,
+or you can choose the specific Pinpoint project that you want to use to send messages.
+Here is a screenshot of how to configure it.
 
+<br />
+<img src="/Screenshots/PolicyAddARN.png" alt="Policy Add ARN" width="900"/>
+<br />
 
+There's no need to configure any Request Conditions, so hit "Review Policy" and
+give the policy a name. I chose a descriptive one, but you can name it anything
+you want.
+
+<br />
+<img src="/Screenshots/CreatePolicyName.png" alt="Name Policy width="900"/>
+<br />
 
 <br /><br />
 <br /><br />
+
+Ok! Hit "Create Policy" to complete this process.
 
 
 **TODO**: After testing Lambda, add Pinpoint permissions to Lambda IAM Role
@@ -523,6 +544,14 @@ or via a pull request. I hope your AWS journey goes well!
 
 
 <br /><br /><br /><br />
+
+## Planned Fixes/Changes
+**TODO**: Add GIFs to cut down on scrolling through pictures
+**TODO**: Add credits/shoutouts
+**TODO**:
+
+## Old Stuff
+MarvelMovieProject-role-j5bre0sa
 
 Original blog post this was based off of:
 https://mkdev.me/en/posts/how-to-send-sms-messages-with-aws-lambda-sns-and-python-3
