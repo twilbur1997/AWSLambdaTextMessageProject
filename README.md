@@ -79,8 +79,8 @@ If you are interested in a free tutorial, I may build out a similar tutorial
 using [AWS SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-lambda-as-subscriber.html)
 in the future, which has a more inclusive free tier than Pinpoint
 
-There are also some free services which can do similar things to this, like IFTTT
-https://ifttt.com/
+There are also some free services which can do similar things to this, like [IFTTT](https://ifttt.com/)
+
 
 <br /><br />
 # Service Overview
@@ -468,21 +468,26 @@ a list of all the roles in your IAM console.
 <img src="/Screenshots/IAMRoles.png" alt="IAM Roles" width="900"/>
 <br />
 
-Type "Marvel" into the search bar to find the role that your Lambda function created.
+Type "Marvel" into the search bar to find the role that your Lambda function
+created. Click on the Role name.
 
 <br />
 <img src="/Screenshots/IAMRoleSearch.png" alt="IAM Role Search" width="900"/>
 <br />
 
+This role has a single policy applied at the moment - an AWS Lambda Basic
+Execution Role. This role only gives permissions for CloudWatch logging capabilities.
+However, we want the Lambda function to be able to call Pinpoint as well. To do that,
+we need to add another policy. Click on "Add Inline Policy"
+
+<br />
+<img src="/Screenshots/AWSLambdaRole.png" alt="IAM Lambda Role" width="900"/>
+<br />
 
 
 
-
-
-
-
-
-<br /><br /><br /><br />
+<br /><br />
+<br /><br />
 
 
 **TODO**: After testing Lambda, add Pinpoint permissions to Lambda IAM Role
