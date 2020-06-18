@@ -436,7 +436,7 @@ role was denied permissions to do something by IAM.
 
 The IAM role in question is the default one that was created when we first
 created our Lambda function. It is being denied the action mobiletargeting:SendMessages
-on a specific resource, which is our Pinpoint Project.
+on a specific resource, mobiletargeting, which is our Pinpoint Project.
 
 Let's fix that now.
 
@@ -445,8 +445,34 @@ Let's fix that now.
 
 ## Modifying the Lambda IAM Role
 
-What caused this error?....
+We need to navigate to the IAM Console. Click on the "Services" tab in the upper
+left, type in "IAM", and press Enter.
 
+<br />
+<img src="/Screenshots/TestPermissionsErrorServices.png" alt="Test Permissions Service Tab" width="900"/>
+<br />
+
+<br />
+<img src="/Screenshots/ServiceSearchIAM.png" alt="IAM Service Search" width="900"/>
+<br />
+
+
+You'll come to a screen that looks like the following. Click on "Roles" to get
+a list of all the roles in your IAM console.
+
+<br />
+<img src="/Screenshots/IAMConsole.png" alt="IAM Console" width="900"/>
+<br />
+
+<br />
+<img src="/Screenshots/IAMRoles.png" alt="IAM Roles" width="900"/>
+<br />
+
+Type "Marvel" into the search bar to find the role that your Lambda function created.
+
+<br />
+<img src="/Screenshots/IAMRoleSearch.png" alt="IAM Role Search" width="900"/>
+<br />
 
 <br /><br /><br /><br />
 
