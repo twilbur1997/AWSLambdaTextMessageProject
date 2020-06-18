@@ -485,6 +485,19 @@ we need to add another policy. Click on "Add Inline Policy"
 <br />
 
 
+Now, AWS Pinpoint is the service which we need permissions for. Search for that
+in the "Service" area and select Pinpoint.
+<br />
+Next, for "Actions", it's okay to select "All Pinpoint Actions" for this tutorial.
+However, it is best practice to allow the smallest number of actions possible
+for a role to be able to do its job. This approach is known as "Least Privilege"
+and is a good way to keep your users and applications from doing things they
+aren't supposed to. To demonstrate this, I will only allow the function the
+permissions that it needs, namely, the mobiletargeting:SendMessages command.
+<br />
+Next, for "Resources" again it's okay to select "All Resources" for this tutorial
+
+
 
 <br /><br />
 <br /><br />
