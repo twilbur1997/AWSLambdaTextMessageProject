@@ -496,17 +496,21 @@ not explicitly allowed in any policies attached to the role, the action is denie
 
 Now, AWS Pinpoint is the service which we need permissions for. Search for that
 in the "Service" area and select Pinpoint.
-<br />
+<br /><br />
+
 Next, for "Actions", it's okay to select "All Pinpoint Actions" for this tutorial.
 However, it is best practice to allow the smallest number of actions possible
 for a role to be able to do its job. This approach is known as "Least Privilege"
 and is a good way to keep your users and applications from doing things they
 aren't supposed to. To demonstrate this, I will only allow the function the
-permissions that it needs, namely, the mobiletargeting:SendMessages command.
-<br />
+permissions that it needs, namely, the "mobiletargeting:SendMessages" command.
+<br /><br />
+
 Next, for "Resources" again it's okay to select "All Resources" for this tutorial,
 or you can choose the specific Pinpoint project that you want to use to send messages.
-Here is a screenshot of how to configure it.
+Here is a screenshot of how to configure it. Note that you need to append "/messages"
+at the end of the resource ID, so if your Pinpoint project has the Project ID "123456",
+you should put "123456/messages" in the "App id" box.
 
 <br />
 <img src="/Screenshots/PolicyAddARN.png" alt="Policy Add ARN" width="900"/>
@@ -520,7 +524,6 @@ anything you want.
 <img src="/Screenshots/CreatePolicyName.png" alt="Name Policy" width="900"/>
 <br />
 
-
 Ok! Hit "Create Policy" to complete this process.
 
 <br />
@@ -532,17 +535,21 @@ Head back to your Lambda function via the Services tab. Then select your Lambda 
 <img src="/Screenshots/LambdaProjectsScreen.png" alt="Lambda Projects" width="900"/>
 <br />
 
+Now, we're going to test our Lambda project again. Click on test in the upper
+right corner.
 
+
+
+LambdaTestSuccessFull
 
 <br /><br /><br /><br /><br /><br />
-
-
-
 
 
 ## Adding a CloudWatch Event to automatically trigger the Lambda function
 **TODO**: Add CloudWatch Event Rule to schedule text every day.
 http://www.cronmaker.com/
+
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions
 
 ## Cleaning Up
 **TODO**: Add cleanup instructions for Pinpoint, Lambda, CloudWatch, and IAM
