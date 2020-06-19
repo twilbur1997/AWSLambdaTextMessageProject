@@ -486,6 +486,8 @@ we need to add another policy. Click on "Add Inline Policy"
 
 
 Here is the screen you will see to create a new policy and attach it to this role.
+Policies **allow** roles to perform **Actions** on **Resources**. If the action is
+not explicitly allowed in any policies attached to the role, the action is denied.3
 
 <br />
 <img src="/Screenshots/IAMCreatePolicy.png" alt="IAM Create Role" width="900"/>
@@ -511,20 +513,31 @@ Here is a screenshot of how to configure it.
 <br />
 
 There's no need to configure any Request Conditions, so hit "Review Policy" and
-give the policy a name. I chose a descriptive one, but you can name it anything
-you want.
+give the policy a name. I chose a more descriptive one, but you can name it
+anything you want.
 
 <br />
-<img src="/Screenshots/CreatePolicyName.png" alt="Name Policy width="900"/>
+<img src="/Screenshots/CreatePolicyName.png" alt="Name Policy" width="900"/>
 <br />
 
-<br /><br />
-<br /><br />
 
 Ok! Hit "Create Policy" to complete this process.
 
+<br />
 
-**TODO**: After testing Lambda, add Pinpoint permissions to Lambda IAM Role
+This will allow your Lambda function to call the Pinpoint project to send messages.
+Head back to your Lambda function via the Services tab. Then select your Lambda project.
+
+<br />
+<img src="/Screenshots/LambdaProjectsScreen.png" alt="Lambda Projects" width="900"/>
+<br />
+
+
+
+<br /><br /><br /><br /><br /><br />
+
+
+
 
 
 ## Adding a CloudWatch Event to automatically trigger the Lambda function
