@@ -551,7 +551,6 @@ http://www.cronmaker.com/
 
 
 ## The End
-
 Thanks for reading through this tutorial! Feel free to give feedback about any issues
 or via a pull request. I hope your AWS journey goes well!
 
@@ -560,8 +559,11 @@ or via a pull request. I hope your AWS journey goes well!
 
 ## Planned Fixes/Changes
 **TODO**: Add GIFs to cut down on scrolling through pictures
+<br />
 **TODO**: Add credits/shoutouts
+<br />
 **TODO**:
+<br />
 
 ## Old Stuff
 MarvelMovieProject-role-j5bre0sa
