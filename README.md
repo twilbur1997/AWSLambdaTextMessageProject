@@ -551,7 +551,7 @@ You should receive a text message from the long code that was configured in your
 Pinpoint. You can also view the details of the execution.
 
 <br />
-<img src="/Screenshots/LambdaTestSuccessFull.png" alt="Lambda Test Success Details" width="900"/>
+<img src="/Screenshots/LambdaTestSuccessDetails.png" alt="Lambda Test Success Details" width="900"/>
 <br />
 
 
@@ -609,9 +609,11 @@ If you are in the PDT time zone, this is the function that results in 7pm PDT.
 `cron(0 2 ? * * *)`
 <br />
 
-<br />
+
 If you want to send the message at a different time or frequency, you can make
 your own CRON expression [here](http://www.cronmaker.com/)
+
+TEST [here](https://aws.amazon.com/lambda/faqs/).
 
 <br />
 Note that AWS has a
