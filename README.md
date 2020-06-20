@@ -618,24 +618,39 @@ If you want to send the message at a different time or frequency, you can make
 your own CRON expression [here](http://www.cronmaker.com/)
 
 <br />
-<img src="/Screenshots/TriggerSuccessful.png" alt="Trigger Successful" width="900"/>
-<br />
-
-<br />
 
 Note that AWS has a
 [slightly different](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions)
  CRON expression layout than the standard one. It doesn't include the "Seconds" parameter.
 
 
+<br />
+<img src="/Screenshots/TriggerSuccessful.png" alt="Trigger Successful" width="900"/>
+<br />
+
+Now, you should get a text message on the schedule you configured in EventBridge (CloudWatch Events).
+<br />
+If you want to get a text before 7pm tonight, create another trigger that will trigger
+in a few minutes - just remember to adjust for UTC time.
 
 
-<br /><br /><br /><br /><br /><br />
 
 ## Cleaning Up
-**TODO**: Add cleanup instructions for Pinpoint, Lambda, CloudWatch, and IAM
+**TODO**: Add cleanup screenshots/GIFs for Pinpoint, Lambda, CloudWatch, and IAM
 
-<br /><br />
+Lambda: Click on "Actions", and select "Delete function", then hit "Delete"
+
+Pinpoint: Click on your Pinpoint Project, click on "Settings", then "General Settings",
+then "Delete Project" in the upper right corner.
+
+CloudWatch: Navigate to CloudWatch using the Services tab, click on "Rules", and
+select the rule you want to delete. Select "Actions" and then delete.
+
+IAM Role: Navigate to "Roles", search for the role your Lambda function used,
+click the checkbox next to it, and click delete.
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+
 
 
 ## The End
