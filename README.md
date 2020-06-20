@@ -596,28 +596,30 @@ We'll create a Schedule expression using cron to schedule when we want our text 
 <img src="/Screenshots/TriggerCRONExpression.png" alt="Trigger CRON Expression" width="900"/>
 <br />
 
-This is the cron expression to trigger the Lambda function at 7pm UTC.
+Be aware that CloudWatch Events are executed at Universal Coordinated Time (UTC),
+so adjust your cron job accordingly. I need to adjust mine to PDT time.
+<br />
+
+This is the cron expression to trigger the Lambda function at 7pm UTC (19:00)
 <br />
 `cron(0 19 ? * * *)`
-<br />
-If you are in the EDT time zone, this is the function that results in 7pm EDT.
-<br />
-`cron(0 23 ? * * *)`
 <br />
 If you are in the PDT time zone, this is the function that results in 7pm PDT.
 <br />
 `cron(0 2 ? * * *)`
 <br />
-
+If you are in the EDT time zone, this is the function that results in 7pm EDT.
 <br />
-
+`cron(0 23 ? * * *)`
+<br />
+<br />
 
 If you want to send the message at a different time or frequency, you can make
 your own CRON expression [here](http://www.cronmaker.com/)
 
 <br />
-
-TEST [here](https://aws.amazon.com/lambda/faqs/).
+<img src="/Screenshots/TriggerSuccessful.png" alt="Trigger Successful" width="900"/>
+<br />
 
 <br />
 
