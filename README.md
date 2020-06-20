@@ -597,11 +597,18 @@ We'll create a Schedule expression using cron to schedule when we want our text 
 <br />
 
 This is the cron expression to trigger the Lambda function at 7pm UTC.
+<br />
 `cron(0 19 ? * * *)`
+<br />
 If you are in the EDT time zone, this is the function that results in 7pm EDT.
+<br />
 `cron(0 23 ? * * *)`
+<br />
 If you are in the PDT time zone, this is the function that results in 7pm PDT.
+<br />
 `cron(0 2 ? * * *)`
+<br />
+
 <br />
 If you want to send the message at a different time or frequency, you can make
 your own CRON expression [here](http://www.cronmaker.com/).
