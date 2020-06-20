@@ -540,16 +540,83 @@ right corner.
 
 
 
-LambdaTestSuccessFull
+<br />
+<img src="/Screenshots/LambdaTestSuccess.png" alt="Lambda Test Success" width="900"/>
+<br />
 
-<br /><br /><br /><br /><br /><br />
+You should see a success banner! If you do not see this banner, wait a minute or
+two and refresh the page to ensure the IAM role has had time to update.
+
+You should receive a text message from the long code that was configured in your
+Pinpoint. You can also view the details of the execution.
+
+<br />
+<img src="/Screenshots/LambdaTestSuccessFull.png" alt="Lambda Test Success Details" width="900"/>
+<br />
 
 
 ## Adding a CloudWatch Event to automatically trigger the Lambda function
 **TODO**: Add CloudWatch Event Rule to schedule text every day.
-http://www.cronmaker.com/
 
-https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions
+Now, we are going to add a scheduled event to trigger our Lambda function every
+day at 7pm. Close the success report by clicking the X in the upper right corner.
+
+<br />
+Adding a trigger is easy - just click "Add Trigger" near the center left of the screen.
+
+
+
+
+<br />
+<img src="/Screenshots/AddTrigger.png" alt="Add Trigger" width="900"/>
+<br />
+
+Click on the "Select a trigger" dropdown, and scroll (or search) to find the
+EventBridge trigger.
+
+<br />
+<img src="/Screenshots/TriggerEventBridge.png" alt="Trigger EventBridge" width="900"/>
+<br />
+
+Next, we will select "Create a new rule" in the next dropdown.
+
+<br />
+<img src="/Screenshots/TriggerEmptyRule.png" alt="Trigger Empty Rule" width="900"/>
+<br />
+
+Idk I might remove one of these screenshots, there's a lot of them.
+
+<br />
+<img src="/Screenshots/TriggerCreateNewRule.png" alt="Trigger Create New Rule" width="900"/>
+<br />
+
+We'll create a Schedule expression using cron to schedule when we want our text to be sent.
+
+<br />
+<img src="/Screenshots/TriggerCRONExpression.png" alt="Trigger CRON Expression" width="900"/>
+<br />
+
+This is the cron expression to trigger the Lambda function at 7pm UTC.
+`cron(0 19 ? * * *)`
+If you are in the EDT time zone, this is the function that results in 7pm EDT.
+`cron(0 23 ? * * *)`
+If you are in the PDT time zone, this is the function that results in 7pm PDT.
+`cron(0 2 ? * * *)`
+<br />
+If you want to send the message at a different time or frequency, you can make
+your own CRON expression [here](http://www.cronmaker.com/).
+<br />
+AWS has a [slightly different](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions)
+ CRON expression layout
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><br /><br />
 
 ## Cleaning Up
 **TODO**: Add cleanup instructions for Pinpoint, Lambda, CloudWatch, and IAM
