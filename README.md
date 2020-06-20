@@ -625,12 +625,6 @@ Note that AWS has a
 [slightly different](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions)
  CRON expression layout than the standard one. It doesn't include the "Seconds" parameter.
 
-Standard CRON: Second, Minute, Hour, Day-of-month, Month, Day-of-week, Year
-AWS CRON:              Minute, Hour, Day-of-month, Month, Day-of-week, Year
-
-
-
-
 
 
 
