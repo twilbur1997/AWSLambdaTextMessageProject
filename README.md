@@ -623,8 +623,10 @@ TEST [here](https://aws.amazon.com/lambda/faqs/).
 
 Note that AWS has a
 [slightly different](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions)
- CRON expression layout than the standard one.
+ CRON expression layout than the standard one. It doesn't include the "Seconds" parameter.
 
+Standard CRON: Second, Minute, Hour, Day-of-month, Month, Day-of-week, Year
+AWS CRON:              Minute, Hour, Day-of-month, Month, Day-of-week, Year
 
 
 
@@ -644,8 +646,11 @@ Note that AWS has a
 Thanks for reading through this tutorial! Feel free to give feedback about any issues
 or via a pull request. I hope your AWS journey goes well!
 
+<br />
 
+Newline printer go `<br /><br /><br /><br />`
 <br /><br /><br /><br />
+
 
 ## Planned Fixes/Changes
 **TODO**: Add GIFs to cut down on scrolling through pictures
