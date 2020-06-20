@@ -613,8 +613,9 @@ If you are in the PDT time zone, this is the function that results in 7pm PDT.
 If you want to send the message at a different time or frequency, you can make
 your own CRON expression [here](http://www.cronmaker.com/).
 <br />
-AWS has a [slightly different](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions)
- CRON expression layout
+Note that AWS has a
+[slightly different](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html#CronExpressions)
+ CRON expression layout than the standard one.
 
 
 
